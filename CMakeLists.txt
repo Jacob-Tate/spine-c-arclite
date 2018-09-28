@@ -13,6 +13,6 @@ else()
     target_compile_options(spine-c PRIVATE "-fPIC")
 endif()
 
-target_include_directories(spine-c PUBLIC spine-c)
+target_include_directories(spine-c PUBLIC spine-c/include)
 install(TARGETS spine-c DESTINATION dist/lib)
 install(FILES ${INCLUDES} DESTINATION dist/include)
